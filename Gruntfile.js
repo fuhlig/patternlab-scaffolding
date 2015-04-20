@@ -19,6 +19,7 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('scss', [
+        'sass_globbing',
         'sass',
         'autoprefixer'
     ]);
@@ -35,6 +36,7 @@ module.exports = function(grunt) {
         'concat',
         'copy',
         'uglify',
+        'sass_globbing',
         'concurrent',
         'connect:server',
         'watch'
